@@ -6,37 +6,48 @@ const textoResultado= document.querySelector(".texto-resultado");
 
 const perguntas= [
     {
-        enunciado:"Pergunta1",
+        enunciado:"Qual o meu anime favorito??",
         alternativas:[
-            "alternativa1",
-            "alternativa2",
+            "Jujutsu Kaisen",
+            "Kimetsu no yaiba",
         ]
     },
-]
-const perguntas= [
-    {
-        enunciado:"Pergunta1",
+{
+        enunciado:"Qual meu personagem preferido?",
         alternativas:[
-            "alternativa1",
-            "alternativa2",
+            "Satoro Gojo",
+            "Tanjiro Kamado",
+        ]
+    },    
+{
+        enunciado:"Qual meu segundo anime favorito?",
+        alternativas:[
+            "Hunter X Hunter",
+            "Haikyuu",
         ]
     },
-]
-const perguntas= [
-    {
-        enunciado:"Pergunta1",
-        alternativas:[
-            "alternativa1",
-            "alternativa2",
-        ]
-    },
-]
-const perguntas= [
-        {
-            enunciado:"Pergunta1",
-            alternativas:[
-                "alternativa1",
-                "alternativa2",
+{
+         enunciado:"Qaul anime eu nâo suporto?",
+         alternativas:[
+                "One Piece",
+                "Attack on Titan",
             ]
         },
-    ]
+{
+         enunciado:"????",
+         alternativas:[
+                "One Piece",
+                "Attack on Titan",
+            ]
+        },      
+    ];
+
+let atual= 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual= perguntas[atual];
+    caixaPerguntas.textContent= perguntaAtual.enunciado;
+}
+
+mostraPergunta();
