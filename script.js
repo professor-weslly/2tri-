@@ -8,39 +8,69 @@ const perguntas= [
     {
         enunciado:"Qual o meu anime favorito??",
         alternativas:[
-            "Jujutsu Kaisen",
-            "Kimetsu no yaiba",
+          {
+            texto: "Jujutsu Kaisen",
+          afirmação: "afirmação",
+          },
+          {
+            texto: "Kimetsu no yaiba",
+          afirmação: "afirmação",
+          },
         ]
     },
 {
-        enunciado:"Qual meu personagem preferido?",
+        enunciado:"Qual meu personagem preferido de JJK?",
         alternativas:[
-            "Satoro Gojo",
-            "Tanjiro Kamado",
+           {
+            texto: "Satoro Gojo",
+           afirmação: "afirmação",
+           },
+           {
+            texto: "Tanjiro Kamado",
+           afirmação: "afirmação",
+           },
         ]
     },    
 {
         enunciado:"Qual meu segundo anime favorito?",
         alternativas:[
-            "Hunter X Hunter",
-            "Haikyuu",
+           {
+            texto: "Hunter X Hunter",
+           afirmação: "afirmação",
+           },
+           { 
+            texto: "Haikyuu",
+           afirmação: "afirmação",
+           },
         ]
     },
 {
-         enunciado:"Qaul anime eu nâo suporto?",
+         enunciado:"Qual anime eu nâo suporto?",
          alternativas:[
-                "One Piece",
-                "Attack on Titan",
-            ]
-        },
+            { 
+              texto: "One Piece",
+            afirmação: "afirmação",   
+            },
+            {
+              texto: "Attack on Titan",
+            afirmação: "afirmação",
+            },
+        ]
+    },
 {
-         enunciado:"????",
+         enunciado:"Qual meu ????",
          alternativas:[
-                "One Piece",
-                "Attack on Titan",
-            ]
-        },      
-    ];
+            {   
+             texto: ".....",
+            afirmação: "afirmação", 
+            },
+            {
+             texto: "....",
+            afirmação: "afirmação",    
+            },
+        ]
+    },      
+];
 
 let atual= 0;
 let perguntaAtual;
