@@ -6,20 +6,20 @@ const textoResultado= document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado:"Qual o meu anime favorito??",
+        enunciado:"Se sua casa estivesse pegando fogo o que|quem voce salvaria?",
         alternativas:[
           {
-            texto: "Jujutsu Kaisen",
-          afirmação: "afirmação",
+            texto: "Meus materiais de estudo, sem eles não passo de ano",
+          afirmação: "Voce tem um coração de pedra, tente ser mais gentil",
           },
           {
-            texto: "Kimetsu no yaiba",
-          afirmação: "afirmação",
+            texto: "Meus animais de estimação, são mais importantes que tudo",
+          afirmação: "Realmente eles são mais importantes. Materiais de estudos são substituiveis",
           },
         ]
     },
     {
-        enunciado:"Qual meu personagem preferido de JJK?",
+        enunciado:"Voce se perdeu em uma florestas ",
         alternativas:[
            {
             texto: "Satoro Gojo",
