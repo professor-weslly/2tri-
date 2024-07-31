@@ -19,23 +19,23 @@ const perguntas = [
         ]
     },
     {
-        enunciado:"Voce se perdeu em uma florestas ",
+        enunciado:"Voce se perdeu em uma floresta ao entardecer sem comida,água e sem celular, o que voce faria?",
         alternativas:[
            {
-            texto: "Satoro Gojo",
-           afirmação: "afirmação",
+            texto: "Não sairia do lugar, alguém com certeza vai vir me proucurar",
+           afirmação: "Até que não é uma má ideia mas algum animal pode te pegar",
            },
            {
-            texto: "Tanjiro Kamado",
-           afirmação: "afirmação",
+            texto: "Sairia para proucurar comida e um lugar para se abrigar, enquanto tento pensar em um jeito de sair dali",
+           afirmação: "Incrivel porem tente não ir muito longe do local inicial",
            },
         ]
     },    
     {
-        enunciado:"Qual meu segundo anime favorito?",
+        enunciado:"Se voce tivesse só uma opção, qual escolheria?",
         alternativas:[
            {
-            texto: "Hunter X Hunter",
+            texto: "",
            afirmação: "afirmação",
            },
            { 
