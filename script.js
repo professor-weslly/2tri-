@@ -18,7 +18,7 @@ const perguntas = [
           },
         ]
     },
-{
+    {
         enunciado:"Qual meu personagem preferido de JJK?",
         alternativas:[
            {
@@ -31,7 +31,7 @@ const perguntas = [
            },
         ]
     },    
-{
+    {
         enunciado:"Qual meu segundo anime favorito?",
         alternativas:[
            {
@@ -44,7 +44,7 @@ const perguntas = [
            },
         ]
     },
-{
+    {
          enunciado:"Qual anime eu nâo suporto?",
          alternativas:[
             { 
@@ -57,7 +57,7 @@ const perguntas = [
             },
         ]
     },
-{
+    {
          enunciado:"Qual meu ????",
          alternativas:[
             {   
@@ -77,8 +77,13 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
+         if(atual >= perguntas.lenght){
+         mostraResultado();
+         return;
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 function mostraAlternativas() {
@@ -89,10 +94,20 @@ function mostraAlternativas() {
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
+
 function respostaSelecionada(opcaoSelecionada){
-  const afirmacoes = opcaoSelecionada.afirmacoes;
-  historiaFinal = afirmacoes;
-  atual++;
-  mostraPergunta;
+            const afirmacoes = opcaoSelecionada.afirmação;
+            historiaFinal = afirmacoes;
+            atual++;
+            mostraPergunta;
 }
+
+function mostraResultado(){
+    caixasPerguntas.textContent = "Esse é a introdução para juntar todas as afirmações das respostas..."
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
 mostraPergunta();
+
+
