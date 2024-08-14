@@ -6,10 +6,10 @@ const textoResultado= document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado:"Sua casa está pegando fogo e escuta uma garota de cabelo prateado gritando para um anão o chamando de astúpido, você?",
+        enunciado:"O que sâo mitos?",
         alternativas:[
           {
-            texto: "Pediria ajuda para a menina pois ela parece ser mais responsável apesar de também parecer ignorante",
+            texto: "E uma narrativa fantástica que possui o objetivo de explicar a origem de tudo aquilo que existe e é considerado importante para um determinado povo.",
           afirmação: "Arriscado porém a menina bufa, tira um livro de sua bolsa e com o folear de algumas páginas ela apaga o fogo com um jato de água",
           },
           {
