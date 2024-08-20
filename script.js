@@ -1,8 +1,8 @@
-const caixaPrincipal= document.querySelector(".caixa-principal");
-const caixaPerguntas= document.querySelector(".caixa-perguntas");
-const caixaAlternativas= document.querySelector(".caixa-alternativas");
-const caixaResultado= document.querySelector(".caixa-resultado");
-const textoResultado= document.querySelector(".texto-resultado");
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
@@ -77,7 +77,7 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-         if(atual >= perguntas.lenght){
+         if(atual >= perguntas.length){
          mostraResultado();
          return;
     }
@@ -97,13 +97,13 @@ function mostraAlternativas() {
 
 function respostaSelecionada(opcaoSelecionada){
             const afirmacoes = opcaoSelecionada.afirmação;
-            historiaFinal = afirmacoes;
+            historiaFinal += afirmacoes + " ";
             atual++;
-            mostraPergunta;
+            mostraPergunta();
 }
 
 function mostraResultado(){
-    caixasPerguntas.textContent = "Esse é a introdução para juntar todas as afirmações das respostas..."
+    caixaPerguntas.textContent = "Esse é a introdução para juntar todas as afirmações das respostas..."
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
